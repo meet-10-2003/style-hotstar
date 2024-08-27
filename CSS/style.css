@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Moderustic", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    background: rgb(18, 18, 18);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 130px 10fr;
+}
+
+aside{
+    background: linear-gradient(269.57deg, rgba(15, 16, 20, .95) 16.24%, rgba(15, 16, 20, 0) 98.46%);
+    padding: 30px 20px;
+    position: relative;
+    z-index: 999;
+}
+
+aside .icons{
+    position: fixed;
+    top: 30px;
+    left: 20px;
+}
+
+.main-nav{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.nav{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    visibility: hidden;
+}
+
+.main-nav:hover .nav2{
+    visibility: visible;
+}
+
+.hero-section{
+    background: linear-gradient(270deg, rgba(16, 16, 16, 0.2), rgba(31, 32, 32, 0.5)), url(../Images/stree\ 2\ image.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 20px;
+    height: 110vh;
+    width: 100%;
+    padding-top: 220px;
+    
+}
+
+#stree-name{
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.circle-icon{
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+#ua-16{
+    background-color: rgb(128, 128, 128, 0.7);
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+.content{
+    font-size: 14px;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.movie-type{
+    display: flex;
+    gap: 10px;
+    font: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.subscribe-to-watch{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.subscribe-to-watch button{
+    padding: 15px 80px;
+    border-radius: 8px;
+    border: none;
+}
+
+.subscribe-to-watch span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plus-sign{
+    padding: 12px 20px ;
+    background-color: rgb(128, 128, 128, 0.2);
+    border-radius: 8px;
+}
+
+.plus-sign span{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.section-heading{
+    background: rgb(18, 18, 18);
+    padding-top: 40px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 15px;
+}
+
+.section {
+    position: relative;
+}
+
+.small-nav {
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 30px;
+    z-index: 100; /* Higher z-index to stay above */
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    position: sticky;
+    top: 100px;
+    z-index: 99; /* Higher z-index to stay above */
+}
+
+.img-section {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    z-index: -1; /* Lower z-index to ensure it's below the underline */
+    margin-bottom: 50px;
+}
+
+.img-section img{
+    width: 175px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.trailer-section{
+    position: relative;
+    z-index: -1;
+}
+
+.trailer-section h2{
+    margin-bottom: 10px;
+}
+
+.trailer-imgs{
+    display: flex;
+    gap: 20px;
+}
+
+.trailer-section img{
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+}
